@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./musicPlayer.scss"; // Ensure you have relevant styles
+import "./musicPlayer.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeft,
@@ -100,7 +100,6 @@ const MusicPlayer = () => {
       cover: "https://samplesongs.netlify.app/album-arts/without-me.jpg",
       src: "https://samplesongs.netlify.app/Without%20Me.mp3",
     },
-    // Add more songs as needed
   ];
 
   return (
