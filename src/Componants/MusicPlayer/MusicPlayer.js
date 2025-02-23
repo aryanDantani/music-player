@@ -16,6 +16,7 @@ const MusicPlayer = () => {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0); // perticuler duration for song
   const audioRef = useRef(null); //to change Song
+
   /**
    * Play & Pasue toggle
    */
@@ -29,6 +30,7 @@ const MusicPlayer = () => {
       setIsPlaying(false);
     }
   };
+
   /**
    * onChange for Change songs
    */
@@ -39,11 +41,13 @@ const MusicPlayer = () => {
     audio.pause();
     audio.load();
   };
+
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);
     const secs = Math.floor(seconds % 60);
     return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
   };
+
   useEffect(() => {
     const audio = audioRef.current;
     const updateCurrentTime = () => setCurrentTime(audio.currentTime);
