@@ -1,5 +1,3 @@
-
-
 import React, { useState, useRef, useEffect } from "react";
 import "./musicPlayer.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
